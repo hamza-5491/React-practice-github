@@ -1,0 +1,197 @@
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #dcdcdc;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* header */
+
+header .row {
+    color: #fff;
+    background: #000;
+}
+
+.navtabs {
+    background: #454545;
+    display: flex;
+    border-radius: 40px;
+    justify-content: space-around;
+}
+
+.navtabs .btn {
+    width: 100%;
+    border-radius: 40px;
+    color: #fff;
+}
+
+.navtabs .btn:active {
+    background-color: #FFFFFF;
+    color: #000;
+}
+
+.navtabs .btn:focus {
+    background-color: #FFFFFF;
+    color: #000;
+}
+.navbar-brand img{ 
+    /* mix-blend-mode: darken; */
+    width: 40%;
+    filter: drop-shadow(2px 2px 0px #fff);
+}
+
+.links a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.links a:hover {
+    color: #fff;
+}
+
+
+.moving-text a {
+    font-size: 10px;
+    color: #fff;
+}
+
+.moving-text a span {
+    color: rgb(255, 108, 255);
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+/* navbar */
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    padding: 0px 10px;
+    font-size: 17px;
+}
+
+.checkbtn {
+    margin: 7px 10px 0px 0px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    display: block;
+}
+
+ul {
+    width: 40%;
+    position: fixed;
+    height: 100vh;
+    background: #fff;
+    z-index: 111;
+    top: 0;
+    left: -100%;
+    transition: all 0.5s;
+}
+
+nav ul li {
+    display: block;
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+#check:checked~ul {
+    left: 0;
+}
+
+#cancel {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+#check:checked~label #cancel {
+    display: block;
+}
+
+.navbar {
+    background: #000;
+    color: #fff;
+}
+
+.navbar .account span {
+    color: #fff;
+    position: relative;
+    top: 3px;
+    font-size: 15px;
+}
+
+.navbar .form-control {
+    width: 200px;
+}
+
+.navbar-nav .links {
+    margin: 30px 0px 10px 30px;
+
+}
+
+.navbar-nav .links a {
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.accordion .card {
+    margin-top: 70px;
+    border: none;
+    cursor: pointer;
+}
+
+.accordion .nav-item .nav-link {
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.accordion .card-header {
+    background: #fff;
+    border-top: 1px solid #000;
+}
+
+.accordion .card-header:after {
+    font-family: 'FontAwesome';
+    content: "\f068";
+    float: right;
+    color: #000;
+}
+
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f067";
+    color: #000;
+}
+.navbar-nav .links a:hover{
+    color: #000;
+
+}
+@media only screen and (max-width: 992px) {
+    ul{
+        width: 100%;
+    }
+}
